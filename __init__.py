@@ -1,8 +1,8 @@
 from matrix import colors
 from matrix import buttons
-import random
-import time
-import requests as networking
+from matrix import networking
+from matrix import random
+from matrix import time
 
 def put_pixel(x, y, color):
     from bridge import set_pixel_color
