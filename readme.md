@@ -101,3 +101,42 @@ print(pixel_color.green) # printing green value from rgb
 ```
 
 **this function is not supported yet**
+
+## Networking
+
+To send web requests we have the special module called `networking`.  
+If you want to send `GET` request, this module have function called `networking.get(adress)`.
+
+```python
+responce = networking.get('https://httpbin.org/get') # returned responce object
+```
+
+Also, module have `PUT`, `POST`, `DELETE` and other requests types.
+If you need to get json from responce object, just type:
+
+```python
+data = responce.json()
+items = data['items']
+# do your stuff
+```
+
+## Random
+
+To use random things we have a special module called `random`.
+This module can generate random intagers, make random choice from list
+and other cool things with random.
+
+If you need to generate random intager in specific range type this:
+
+```python
+number = random.randint(0, 100) # random intager from 0 to 100
+```
+
+## Time
+
+If you need to do something with time we have a module called `time`.
+When you need to set delay, just type:
+
+```python
+time.sleep(10) # sleeping 10 seconds
+```
